@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parc des légendes - Tarifs</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Retour à l'Accueil</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Nos différents tarifs</h1>
+
+      <section id="grille-tarifaire">
+        <h2>Grille tarifaire</h2>
+        <table>
+          <caption>
+            Tableau des tarifs proposés
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Catégorie</th>
+              <th scope="col">Plein Tarif</th>
+              <th scope="col">Tarif réduit</th>
+              <th scope="col">Conditions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Adulte (13 ans et +)</th>
+              <td>45€</td>
+              <td>38€</td>
+              <td>
+                Tarif réduit sur présentation d'un justificatif étudiant ou
+                demandeur d'emploi
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Enfant (3-12 ans)</th>
+              <td>29€</td>
+              <td>24€</td>
+              <td>Tarif réduit pour les groupes scolaires (min. 15 enfants)</td>
+            </tr>
+            <tr>
+              <th scope="row">Famille (2 adultes + 2 enfants)</th>
+              <td>130€</td>
+              <td>110€</td>
+              <td>
+                Tarif réduit valable du lundi au vendredi hors vacances
+                scolaires
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Moins de 3 ans</th>
+              <td>Gratuit</td>
+              <td>Gratuit</td>
+              <td>Sur présentation d'un justificatif d'âge</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">
+                Tous les tarifs incluent l'accès à l'ensemble des attractions et
+                spectacles.
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <section id="formulaire">
+        <h2>Formulaire de Réservation</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Informations Visiteur</legend>
+            <div>
+              <label for="name">Nom complet :</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Dupont Pierre"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Email :</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="dupont@exemple.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="tel">Telephone :</label>
+              <input type="tel" name="tel" id="tel" />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Détails de la Réservation</legend>
+            <div>
+              <label for="date_visite"
+                >Date de visite :
+                <input
+                  type="date"
+                  name="date_visite"
+                  id="date_visite"
+                  min="2026-02-19"
+                  max="2030-02-19"
+                  required
+              /></label>
+            </div>
+            <div>
+              <label
+                >Nombre de billets adultes :
+                <input
+                  type="number"
+                  name="billet_adulte"
+                  id="billet_adulte"
+                  min="0"
+                  max="10"
+              /></label>
+            </div>
+            <div>
+              <label
+                >Nombre de billets enfants :
+                <input
+                  type="number"
+                  name="billet_enfant"
+                  id="billet_enfant"
+                  min="0"
+                  max="10"
+              /></label>
+            </div>
+            <div>
+              <label for="formule">Formule :</label>
+              <select name="formule" id="formule">
+                <option value="">-- Veuillez choisir une formule --</option>
+                <option value="plein">Plein Tarif</option>
+                <option value="reduit">Tarif Réduit</option>
+                <option value="pack_famille">Pack Famille</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Options :</legend>
+            <div>
+              <input type="checkbox" name="visite_guidee" id="visite_guidee" />
+              <label for="visite_guidee">Visite guidée (+15€/personne)</label>
+            </div>
+            <div>
+              <input type="checkbox" name="pack_photo" id="pack_photo" />
+              <label for="pack_photo">Pack photo souvenir (+12€)</label>
+            </div>
+            <div>
+              <input type="checkbox" name="accept" id="accept" required />
+              <label for="accept"
+                >J'accepte les conditions générales de vente</label
+              >
+            </div>
+          </fieldset>
+          <button type="submit">Réserver</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Vous pouvez aussi visitez le
+        <a href="https://www.psg.fr" target="_blank" rel="noopener noreferrer"
+          >Site officiel du PSG</a
+        >
+        pour plus d'informations.
+      </p>
+      <p>&copy; 2026 Parc des légendes</p>
+    </footer>
+  </body>
+</html>
